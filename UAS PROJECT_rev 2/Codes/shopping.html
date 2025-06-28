@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/resource.css">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="assets/vendor/flickity/flickity.css">
+
+  <title>Shop</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <img src="assets/image/logo_png.png" alt="Logo" data-aos="fade-down" data-aos-duration="1500">
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a data-scroll data-easing="easeInQuint" href="Index_UAS.html" data-aos="fade-down"
+          data-aos-duration="400" data-aos-delay="50">Home</a>
+        <a data-scroll data-easing="easeInQuint" class="active" href="shopping.html" data-aos="fade-down" data-aos-duration="400"
+          data-aos-delay="150">Shopping</a>
+        <a data-scroll data-easing="easeInQuint" href="testimony.html" data-aos="fade-down" data-aos-duration="400"
+          data-aos-delay="100">Testimony</a>
+        <a class="login" data-easing="easeInQuint" href="login.html" data-aos="fade-down" data-aos-duration="400"
+          data-aos-delay="150">Login</a>
+          <div class="cart-icon" id="cart-icon">
+            <img src="assets/image/Shopping Cart.png" alt="Cart" onclick="goToCart()">
+          </div>
+      </div>
+      <div id="btn-nav">
+        <img src="assets/image/Menu.png" alt="menu" onclick="toggleMenu()">
+      </div>
+    </div>
+  </header>
+
+  <div class="products">
+    <h3>PRODUCTS</h3>
+    <div class="product-list">
+      <div class="product-item" style="background: #bbb;">
+        <img src="assets/image/cctv.jpeg" alt="CCTV">
+        <h4>CCTV</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-item" style="background-color: #FF842B;">
+        <img src="assets/image/alarm.jpg" alt="Alarm">
+        <h4>Alarm</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-item" style="background: #B04141;">
+        <img src="assets/image/dvr.jpeg" alt="DVR">
+        <h4>DVR</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-item" style="background: #297347;">
+        <img src="assets/image/box.jpeg" alt="Box Panel">
+        <h4>Box Panel</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-item" style="background: gray;">
+        <img src="assets/image/router.jpeg" alt="Router">
+        <h4>Router</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-item" style="background: #41B06E;">
+        <img src="assets/image/fingerp.jpg" alt="Fingerprint">
+        <h4>Fingerprint</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="product-item" style="background: #FFC092;">
+        <img src="assets/image/kabel.jpeg" alt="Kabel CCTV">
+        <h4>Kabel CCTV</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+    <h3>SERVICES</h3>
+    <div class="services-list">
+      <div class="service-item">
+        <img src="assets/image/pasang baru.jpeg" alt="Pasang Baru">
+        <h4>Pasang Baru</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+      <div class="service-item">
+        <img src="assets/image/service.jpg" alt="Perbaikan">
+        <h4>Perbaikan</h4>
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-1">
+        <div class="footer-logo" data-aos="fade-down" data-aos-duration="800">
+          <img src="assets/image/logo_png.png" alt="Logo">
+          <h1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">Tunas Baru</h1>
+        </div>
+      </div>
+
+      <div class="footer-2">
+        <h1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">Contact</h1>
+        <a href="tel:+6282333326228" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">+62-823-3332-6228</a>
+        <a href="mailto:tunasbaru_sby@yahoo.com" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">tunasbaru_sby@yahoo.com</a>
+      </div>
+
+      <div class="footer-3">
+        <h1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="300">Operational Time</h1>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Mon - Fri | 08 Am - 05 Pm</p>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Sat | 10 Am - 04 Pm</p>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">Sun | Closed</p>
+      </div>
+
+      <div class="footer-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <h1>Link</h1>
+        <a data-scroll data-easing="easeInQuint" href="#tentang">Home</a>
+        <a data-scroll data-easing="easeInQuint" href="#penjelasan">About Us</a>
+        <a data-scroll data-easing="easeInQuint" href="shopping.html">Shop</a>
+        <a data-scroll data-easing="easeInQuint" href="testimony.html">Testimony</a>
+        <a data-scroll data-easing="easeInQuint" href="#area-address">Location</a>
+      </div>
+    </div>
+    <h1>&copy; Copyright 2022, <a href="#"> CV. Tunas Baru.</a> All Rights Reserved</h1>
+  </footer>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.js"></script>
+  <script src="assets/vendor/type/type.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/flickity/flickity.pkgd.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/smooth-scroll.js"></script>
+
+  <script>
+    AOS.init();
+
+    function toggleMenu() {
+      const navLinks = document.getElementById('nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>

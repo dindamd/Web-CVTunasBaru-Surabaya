@@ -1,0 +1,8 @@
+Color Pallete Website : https://colorhunt.co/palette/fff5e08decb441b06e141e46
+
+cream : #FFF5E0 - 255, 245, 224
+light tosca : #8DECB4 - 141, 236, 180
+green : #41B06E - 65, 176, 110
+Blue : #141E46 - 20, 30, 70
+Black : #0C0C0C - 12, 12, 12
+Oranye : 

@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Alice",
+        "rating": 5,
+        "comment": "Great service!"
+    },
+    {
+        "name": "Bob",
+        "rating": 4,
+        "comment": "Very satisfied with the products."
+    }
+]

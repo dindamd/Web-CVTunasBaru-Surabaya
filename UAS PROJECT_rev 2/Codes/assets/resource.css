@@ -1,0 +1,735 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5E0;
+}
+
+header {
+    background-color: #FFF5E0;
+    color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed; /* Fixed position */
+    top: 0; /* Stay at the top */
+    z-index: 1000; /* Stay above other content */
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FF7F00; /* Change text color on hover */
+    border-bottom: 2px solid #FF7F00; /* Change border-bottom color on hover */
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #41B06E;
+}
+
+.login {
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login:hover {
+    background-color: #41B06E; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    height: 30px;
+    width: 30px;
+}
+
+#btn-nav img {
+    height: 30px;
+    display: none;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: white;
+        padding: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    #btn-nav img {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.tentang, .penjelasan, .area-address {
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 0;
+    box-sizing: border-box;
+}
+
+.tentang img, .penjelasan img {
+    max-width: 10%;
+    height: auto;
+}
+
+.about-us, .testi {
+    background-color: #41B06E;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* max-width: 1200px;  */
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+.footer > div {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    height: 80%;
+    margin-right: 10px;
+    max-height: 30px;
+}
+
+.footer h1 {
+    font-size: 18px; /* Adjusted font size for the headings */
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer .footer-1, .footer-2, .footer-3, .footer-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+footer > h1 {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer > div {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF5E0;
+    margin: 0; /* Ensure no margin around the container */
+    width: 100%; /* Ensure it takes the full width of the viewport */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-top: 60px; /* Added margin-top to account for fixed header */
+}
+
+.text-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.text-content h1 {
+    font-size: 3em;
+}
+
+.text-content h2 {
+    font-size: 2.5em;
+    color: #41B06E;
+}
+
+.text-content h3 {
+    font-size: 1.5em;
+    color: black;
+}
+
+.text-content p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.5;
+    text-align: justify; /* Added */
+}
+
+.buy-now {
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buy-now:hover {
+    background-color: #41B06E; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #FFF5E0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-content {
+    flex: 0 0 auto;
+    padding-right: 20px;
+    width: 10%;
+}
+
+.logo-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-content {
+    flex: 1;
+}
+
+/* Address section styles */
+.address-section {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #FFF5E0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.map-content {
+    flex: 1;
+    padding-left: 0;
+}
+
+.map-content iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+}
+
+.text-content .testimony {
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.text-content .testimony:hover {
+    background-color: #41B06E; /* Change background color on hover */
+    color: white; /* Change text color on hover */
+}
+
+/* CSS for Product Page */
+
+.products {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.products h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #41B06E;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-item {
+    width: 200px; /* Set fixed width */
+    height: 300px; /* Set fixed height */
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the total dimensions */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-item img {
+    width: 100%; /* Ensure images fit within the container */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the container without distortion */
+    border-radius: 10px;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item h4 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.service-item {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    box-sizing: border-box; /* Ensure padding is included in the total dimensions */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-item img {
+    width: 150px; /* Set fixed width */
+    height: 150px; /* Set fixed height */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item h4 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.add-to-cart {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px; /* Space between the button and other content */
+}
+
+.add-to-cart:hover {
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .services-list {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+    }
+
+    #btn-nav img {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #FFF;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Login Section */
+.login-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-left {
+    flex: 1;
+    background-color: #FFF5E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-left img {
+    max-width: 50%;
+    height: auto;
+}
+
+.login-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #297347;
+    color: white;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #FF5700;
+}
+
+/* CSS untuk inputan review yang lebih menarik */
+
+.review-form {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.review-form select {
+    appearance: none; /* Remove default arrow icon on select */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('assets/arrow-down.png'); /* Custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 25px;
+}
+
+.review-form textarea {
+    resize: vertical; /* Allow vertical resizing */
+}
+
+.review-form input[type="submit"] {
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.review-form input[type="submit"]:hover {
+    background-color: #FF5700; /* Change background color on hover */
+}
+
+/* Membuat label bintang (asterisk) untuk input yang wajib diisi */
+.required:after {
+    content: "*";
+    color: red;
+    margin-left: 3px;
+}
+
+/* Mengubah tampilan dropdown rating */
+.review-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* Membuat tampilan tombol Submit menjadi lebih menarik saat dihover */
+.review-form input[type="submit"]:hover {
+    background-color: #FF5700;
+    color: white;
+    transform: scale(1.05); /* Membuat tombol sedikit membesar saat dihover */
+}
+
+.testimonial-list {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #FFF5E0;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.testimonial-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.testimonial-item:last-child {
+    border-bottom: none;
+}
+
+.testimonial-item p {
+    margin: 5px 0;
+}
+
+.testimonial-item .name {
+    font-weight: bold;
+    color: #333;
+}
+
+.testimonial-item .rating {
+    color: #FF7F00;
+}
+
+/* cart.css */
+.cart-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.cart-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.item-details h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    margin-bottom: 5px;
+}
+
+.item-actions {
+    margin-left: auto;
+}
+
+.remove-item {
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-item:hover {
+    background-color: #FF5700;
+}
+
+.cart-summary {
+    text-align: right;
+}
+
+.cart-summary h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.checkout-button {
+    background-color: #41B06E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #318355;
+}

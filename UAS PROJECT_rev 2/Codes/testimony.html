@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/resource.css">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+  <link rel="stylesheet" href="assets/vendor/flickity/flickity.css">
+
+  <title>Testimony</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <img src="assets/image/logo_png.png" alt="Logo" data-aos="fade-down" data-aos-duration="1500">
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a data-scroll data-easing="easeInQuint" href="Index_UAS.html" data-aos="fade-down"
+          data-aos-duration="400" data-aos-delay="50">Home</a>
+        <a data-scroll data-easing="easeInQuint" href="shopping.html" data-aos="fade-down" data-aos-duration="400"
+          data-aos-delay="150">Shopping</a>
+        <a data-scroll data-easing="easeInQuint" class="active" href="testimony.html" data-aos="fade-down" data-aos-duration="400"
+          data-aos-delay="100">Testimony</a>
+        <a class="login" data-easing="easeInQuint" href="login.html" data-aos="fade-down" data-aos-duration="400"
+          data-aos-delay="150">Login</a>
+          <div class="cart-icon" id="cart-icon">
+            <img src="assets/image/Shopping Cart.png" alt="Cart" onclick="goToCart()">
+          </div>
+      </div>
+      <div id="btn-nav">
+        <img src="assets/image/Menu.png" alt="menu" onclick="toggleMenu()">
+      </div>
+    </div>
+  </header>
+
+  <div class="content-container">
+    <div class="login-left">
+      <div class="testimonial-list">
+        <!-- Testimonials will be displayed here -->
+      </div>
+    </div>
+    <div class="login-right"><h3>Input Rating</h3>
+      <form class="login-form"id="testimonial-form" action="process.php" method="POST">
+        <div class="form-group">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required><br><br>
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating:</label>
+          <select id="rating" name="rating" required>
+            <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+            <option value="4">&#9733;&#9733;&#9733;&#9733;&#9734;</option>
+            <option value="3">&#9733;&#9733;&#9733;&#9734;&#9734;</option>
+            <option value="2">&#9733;&#9733;&#9734;&#9734;&#9734;</option>
+            <option value="1">&#9733;&#9734;&#9734;&#9734;&#9734;</option>
+          </select><br><br>
+        </div>
+        <div class="form-group">
+          <label for="comment">Komentar:</label><br>
+          <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+        </div>
+        <button type="submit" class="login-button">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-1">
+        <div class="footer-logo" data-aos="fade-down" data-aos-duration="800">
+          <img src="assets/image/logo_png.png" alt="Logo">
+          <h1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">Tunas Baru</h1>
+        </div>
+      </div>
+  
+      <div class="footer-2">
+        <h1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">Contact</h1>
+        <a href="tel:+6282333326228" data-aos="fade-up" data-aos-duration="800" data-aos-delay="250">+62-823-3332-6228</a>
+        <a href="mailto:tunasbaru_sby@yahoo.com" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">tunasbaru_sby@yahoo.com</a>
+      </div>
+  
+      <div class="footer-3">
+        <h1 data-aos="fade-down" data-aos-duration="800" data-aos-delay="300">Operational Time</h1>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="350">Mon - Fri | 08 Am - 05 Pm</p>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Sat | 10 Am - 04 Pm</p>
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">Sun | Closed</p>
+      </div>
+  
+      <div class="footer-4" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+        <h1>Link</h1>
+        <a data-scroll data-easing="easeInQuint" href="#tentang">Home</a>
+        <a data-scroll data-easing="easeInQuint" href="#penjelasan">About Us</a>
+        <a data-scroll data-easing="easeInQuint" href="shopping.html">Shop</a>
+        <a data-scroll data-easing="easeInQuint" href="testimony.html">Testimony</a>
+        <a data-scroll data-easing="easeInQuint" href="#area-address">Location</a>
+      </div>
+    </div>
+    <h1>&copy; Copyright 2022, <a href="#"> CV. Tunas Baru.</a> All Rights Reserved</h1>
+  </footer>
+  
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.js"></script>
+  <script src="assets/vendor/type/type.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/flickity/flickity.pkgd.min.js"></script>
+  <script src="assets/vendor/smooth-scroll/smooth-scroll.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
